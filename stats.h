@@ -9,32 +9,42 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.h> 
+ * @brief header file for trainning propouse
  *
- * <Add Extended Description Here>
+ * This is a header file for declaration of our functions to help in this trainnig
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Jose Leitao
+ * @date 2018-05-05
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
-
+/* print_array()*/
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief print the whole array
  *
- * <Add Extended Description Here>
+ * Print all elements from an array
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param <arrayname> array addres (pointer)
+ * @param <arraylenght> number of elements
  *
- * @return <Add Return Informaiton here>
+ * @return NONE
  */
+void print_array(unsigned char * dataset , int datasetsize) ;
 
+/* print_statistics()*/ 
+/**
+ * @brief print stats data of an array
+ *
+ * Print all stats MAX, MIN, MEDIAN and MEAN of an Array
+ *
+ * @param <arrayname> array address (pointer)
+ * @param <arraylength> number of elements
+ *
+ * @return NONE
+ */
+void print_statistics(unsigned char * dataset , int datasetsize) ;
 
 #endif /* __STATS_H__ */
